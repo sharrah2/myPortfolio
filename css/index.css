@@ -83,7 +83,7 @@ body {
 */
 @media (min-width: 576px) {
     body{
-        background-color: blue !important;
+        /*background-color: blue !important;*/
     }
 }
 
@@ -92,7 +92,7 @@ body {
 */
 @media (min-width: 768px) {
     body{
-        background-color: red !important;
+        /*background-color: red !important;*/
     }
     /*
         Experience Section & Components CSS
@@ -193,7 +193,7 @@ body {
 */
 @media (min-width: 992px) {
     body {
-        background-color: green !important;
+        /*background-color: green !important;*/
     }
 }
 
@@ -202,6 +202,6 @@ body {
 */
 @media (min-width: 1200px) {
     body {
-        background-color: purple !important;
+        /*background-color: purple !important;*/
     }
 }
