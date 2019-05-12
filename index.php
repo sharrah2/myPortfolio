@@ -228,7 +228,7 @@
                         <div class="container-fluid">
                             <div class="row" style="margin: 15px 0px;">
                                 <div class="col-md-4">
-                                    <a href="/views/flyer.php?work=flyer">
+                                    <a href="/views/flyer.php?work=flyer" target="blank">
                                         <img src="/img/cover/flyerCover.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -255,7 +255,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/views/card.php?work=campaign">
+                                    <a href="/views/ig?work=ig">
                                         <img src="/img/cover/socialMediaCampaign.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>

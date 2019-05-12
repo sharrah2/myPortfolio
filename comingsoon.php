@@ -73,7 +73,7 @@
             <p>Will update soon.</p>
         </div>
         <div class="bottomleft">
-            <p>Some text</p>
+            <h1>CREATED BY PAUL KWON</h1>
         </div>
     </div>
 </body>

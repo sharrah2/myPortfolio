@@ -44,7 +44,7 @@
         <div class="row">
             <?php foreach($pathway as $path) { ?>
                 <div class="col-3">
-                    <img src="../img/flyer/<?=$path?>" alt="../img/flyer/<?=$path?>" class="thumbnail">
+                    <img src="../img/flyer/<?=$path?>" alt="../img/flyer/<?=$path?>" class="img-fluid">
                 </div>
             <?php } ?>
         </div>

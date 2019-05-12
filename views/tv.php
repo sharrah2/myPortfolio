@@ -43,7 +43,7 @@
     <div class="container" id="content">
         <div class="row">
             <?php foreach($pathway as $path) { ?>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4">
                     <img src="../img/tv/<?=$path?>" alt="../img/tv/<?=$path?>" class="img-fluid">
                 </div>
             <?php } ?>
