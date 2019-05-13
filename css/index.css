@@ -14,7 +14,6 @@ body {
 #home {
     padding-top: 50px;
     padding-bottom: 65px;
-    /*background-color: pink;*/
 }
 #splash{
     object-fit: fill;
@@ -24,7 +23,6 @@ body {
     padding-top: 75px;
     margin-bottom: 20px;
     height: 800px;
-    /*background-color: yellow;*/
 }
 
 /*
@@ -81,18 +79,13 @@ body {
     Small devices (landscape phones, 576px and up)
 */
 @media (min-width: 576px) {
-    body{
-        /*background-color: blue !important;*/
-    }
+
 }
 
 /*
     Medium devices (tablets, 768px and up)
 */
 @media (min-width: 768px) {
-    body{
-        /*background-color: red !important;*/
-    }
     /*
         Experience Section & Components CSS
     */
@@ -191,16 +184,12 @@ body {
     Large devices (desktops, 992px and up)
 */
 @media (min-width: 992px) {
-    body {
-        /*background-color: green !important;*/
-    }
+    
 }
 
 /*
     Extra large devices (large desktops, 1200px and up)
 */
 @media (min-width: 1200px) {
-    body {
-        /*background-color: purple !important;*/
-    }
+
 }
