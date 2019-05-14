@@ -6,30 +6,39 @@ html {
     scroll-behavior: smooth;
 }
 body { 
-    padding-top: 70px;
     background-color: #f9f8f6 !important;
     font-family: 'Anonymous Pro', monospace !important;
 }
-
-#home {
+#content{
+    padding-top: 60px;
+}
+#home{
     padding-top: 50px;
     padding-bottom: 65px;
+    /*background-color: pink;*/
 }
 #splash{
     object-fit: fill;
 }
-
-#about {
+#about{
     padding-top: 75px;
     margin-bottom: 20px;
-    height: 800px;
+}
+#work{
+    padding-top: 50px;
+}
+.portfolio{
+    margin: 10px 0px;
+}
+#work.col-md-4{
+    padding-top: 15px 0px;
 }
 
 /*
     Experience Section & Components CSS
 */
     #experience{
-        padding-top: 100px;
+        padding-top: 70px;
     }
     .date{
         text-align: center;
@@ -80,12 +89,16 @@ body {
 */
 @media (min-width: 576px) {
 
+    
 }
 
 /*
     Medium devices (tablets, 768px and up)
 */
 @media (min-width: 768px) {
+    #content{
+        padding-top:70px;
+    }
     /*
         Experience Section & Components CSS
     */
@@ -184,12 +197,22 @@ body {
     Large devices (desktops, 992px and up)
 */
 @media (min-width: 992px) {
-    
+    .embed-responsive {
+        position: inherit !important;
+    }
 }
 
 /*
     Extra large devices (large desktops, 1200px and up)
 */
 @media (min-width: 1200px) {
-
+    #content{
+        padding-top:115px;
+    }
+   .embed-responsive video {
+        max-width: 80% !important;
+        left: 10% !important;
+        height: 80% !important;
+    }
+    
 }
