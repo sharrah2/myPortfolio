@@ -1,25 +1,3 @@
-<style>
-   body{
-      font-family: 'Anonymous Pro', monospace !important;
-   }
-   #content{
-      margin-top: 100px;
-   }
-   .thumbnail {
-        height: auto ;
-        width: 200px;
-        margin: 20px 0px;
-   }
-   .thumbnail:hover {
-        position:relative;
-        top:-25px;
-        left:-35px;
-        width:500px;
-        height:auto;
-        display:block;
-        z-index:999;
-    }
-</style>
 <?php
    include_once('header/header.php');
 
@@ -42,8 +20,13 @@
 ?>
     <div class="container" id="content">
         <div class="row">
+            <div class="col-md">
+                <img class="img-fluid" src="/img/objective/emailHeader.png" alt="">
+            </div>
+        </div>
+        <div class="row" id="work">
             <?php foreach($pathway as $path) { ?>
-                <div class="col-3">
+                <div class="col-sm-6 col-md-3 work">
                     <img src="../img/flyer/<?=$path?>" alt="../img/flyer/<?=$path?>" class="img-fluid">
                 </div>
             <?php } ?>

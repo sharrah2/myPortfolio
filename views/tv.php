@@ -25,10 +25,6 @@
 
    $pathway = getAll();
 
-
-   //var_dump($pathway);
-   //die();
-
    /**
     * 
     * Create a function to grab all flyer images from the img/flyer folder
@@ -42,8 +38,13 @@
 ?>
     <div class="container" id="content">
         <div class="row">
+            <div class="col-md">
+                <img class="img-fluid" src="/img/objective/TVHeader.png" alt="">
+            </div>
+        </div>
+        <div class="row">
             <?php foreach($pathway as $path) { ?>
-                <div class="col-sm-6 col-md-4">
+                <div class="col-sm-6 col-md-4 work">
                     <img src="../img/tv/<?=$path?>" alt="../img/tv/<?=$path?>" class="img-fluid">
                 </div>
             <?php } ?>

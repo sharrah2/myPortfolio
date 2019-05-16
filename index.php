@@ -65,7 +65,7 @@
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="/">Sharon Harrah</a>
+        <a class="navbar-brand" href="#home">Sharon Harrah</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -241,7 +241,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/views/ig.php?work=ig" target="blank">
+                                    <a href="/views/ig.php?work=socialMedia" target="blank">
                                         <img src="/img/cover/socialMediaCover.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -263,7 +263,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/views/ig?work=ig">
+                                    <a href="/views/campaign.php">
                                         <img src="/img/cover/socialMediaCampaign.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>

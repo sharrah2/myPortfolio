@@ -1,0 +1,13 @@
+body{
+    font-family: 'Anonymous Pro', monospace !important;
+}
+#content{
+    margin-top: 50px;
+}
+#emailList{
+    /*margin-top: 50px;*/
+}
+.work{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
