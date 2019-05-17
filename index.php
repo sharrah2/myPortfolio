@@ -15,7 +15,7 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
    
-    <!--Index5 CSS-->
+    <!--Index CSS-->
     <link rel="stylesheet" href="/css/index.css">
 
     <!-- Bootstrap CSS -->
@@ -92,7 +92,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         
-                        <div id="splash" class="embed-responsive embed-responsive-21by9" style="">
+                        <div id="splash" class="embed-responsive embed-responsive-21by9">
                             <video autoplay loop src="/img/splash/splash1.mov"></video>
                         </div>
                      
@@ -102,7 +102,26 @@
             <section id="about">
                 <div class="container-fluid">
                     <div class="row">
-                        <img src="img/aboutMe.png" alt="" style="width:100%; height: 100%; background-color:blue;">
+                        <img src="img/aboutMe.png" alt="" style="width:100%; height: 100%;">
+                    </div>
+                    <div id="social" class="row">
+                        <div class="col">
+                            <span class= "social">
+                                <a href="/views/resume.php" target="_blank" style="text-decoration: none; color: black;">
+                                    RESUME
+                                </a>
+                            </span>
+                            <span class="social">
+                                <a href="http://www.linkedin.com/in/sharonharrah/" target="_blank" style="text-decoration: none; color: black">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </span>
+                            <span class="social">
+                                <a href="mailto: sharon.harrah@hotmail.com" style="text-decoration: none; color: black;">
+                                    <i class="fas fa-envelope"></i>
+                                </a>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -119,12 +138,12 @@
                                 </div>
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Collaborate and translate project ideas into media productions. Produce, file, edit, and execute media projects. Develop promotional materials and ensure consistent use of Associated Students of University of Washington Tacoma (ASUWT) branding.</li>
+                                        <li class="list-group-item">Collaborate and translate project ideas into media productions. Produce, film, edit, and execute media projects. Develop promotional materials and ensure consistent use of Associated Students of University of Washington Tacoma (ASUWT) branding.</li>
                                     </ul>
                                     <ul class="container">
-                                        <li>Uses programs on Adobe Creative Cloud and Canva to create advertisements, logo, content, and more for ASUWT team and associated organizations.</li>
-                                        <li>Creates marketing and edited pictures that is shared on UWT campus, ASUWT Instagram, Facebook, Twitter, Email, and website.</li>
-                                        <li>Creates captions that were clear, concise, and consistent for a diverse audience.</li>
+                                        <li>Use programs on Adobe Creative Cloud and Canva to create advertisements, logos, contents, and more for ASUWT and associated organizations.</li>
+                                        <li>Create marketing and edit pictures that are shared on UWT campus, ASUWT Instagram, Facebook, Twitter, Email, and public website.</li>
+                                        <li>Create captions that are clear, concise, and consistent for a diverse audience.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -148,15 +167,17 @@
                             <div class="card">
                                 <div class="card-header" style="text-align:center;">
                                     <h3 class="robot">Tacoma Central Church</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Director of Youth Group</h6>
+                                    <h6 class="card-subtitle mb-2 text-muted">Director of Youth Group (Volunteer)</h6>
                                 </div>
                                 <div class="card-body">
                                     <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Customer Service Associate on the flexible work team responsible for outstanding customer service, creating an exceptional shopping experience, completing point of sale transactions inclusive of credit and Start Rewards enrollment, and delivering a clean, neat, and easy to shop environment.</li>
+                                        <li class="list-group-item">Worked under the supervision of the Youth Group Pastor that developed and oversaw programs and activities that were directed toward middle school and high school students in order to aid their spiritual development and growth.</li>
                                     </ul>
                                     <ul class="container">
-                                        <li >Lead group of high school students in different activities</li>
-                                        <li>In charge of administrative work, weekly finance, and ...</li>
+                                        <li>Created the social media pages.</li>
+                                        <li>Create various promotional goods or marketing materials.</li>
+                                        <li>In charge of administrative work and weekly finance.</li>
+                                        <li>Planned/Budgeted mid-large scale events and lead weekly meetings.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -175,9 +196,9 @@
                                         <li class="list-group-item">Serve customer's needs as a cashier while preparing all beverages and desserts ordered.</li>
                                     </ul>
                                     <ul class="container">
-                                        <li>Started the business social media account on Instagram.</li>
+                                        <li>Started the business social media account on  <a href="https://www.instagram.com/t_towncafe/" style="color:#EF233B;" target="_blank">Instagram</a>.</li>
                                         <li>Helped create content/edit pictures to gain a presence in a diverse area.</li>
-                                        <li>Created a temporary logo for the coffee and dessert cups, and a punch card.</li>
+                                        <li>Created a temporary logo for the coffee and dessert cups, and punch card.</li>
                                     </ul>
                                 </div>
                             </div>
@@ -210,7 +231,7 @@
                                         <li class="list-group-item">Customer Service Associate on the flexible work team responsible for outstanding customer service, creating an exceptional shopping experience, completing point of sale transactions inclusive of credit and Start Rewards enrollment, and delivering a clean, neat, and easy to shop environment.</li>
                                     </ul>
                                     <ul class="container">
-                                        <li >Prepared to work in any department during a shift and on-call.</li>
+                                        <li >Prepared to work in any department during a shift and on call.</li>
                                         <li> Worked cashier, answered phone calls, found missing products, and organized the sales floor.</li>
                                     </ul>
                                 </div>
