@@ -22,6 +22,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sharon Harrah | Portfolio</title>
+     <!--Under Construction-->
+     <script type="text/javascript">
+        function load() 
+        {
+            window.location.href = "../comingsoon.php";
+        }
+    </script>
     <style>
         body {
             font-family: 'Anonymous Pro', monospace !important;
@@ -42,7 +49,7 @@
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
 </head>
-<body>
+<body onload="load()">       
     <div class="container">
         <div class="row">
             <div class="col">

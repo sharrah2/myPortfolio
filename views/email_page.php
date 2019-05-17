@@ -1,22 +1,6 @@
-<style>
-   body{
-      font-family: 'Anonymous Pro', monospace !important;
-   }
-   #content{
-      margin-top: 100px;
-   }
-</style>
 <?php
    include_once('header/header.php');
-
-   //var_dump($_GET);
-
    $pathway = getEmail();
-
-
-   //var_dump($pathway);
-   //die();
-
    /**
     * 
     * Create a function to grab the specific pathway from the img/email folder

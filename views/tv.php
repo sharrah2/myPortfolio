@@ -1,25 +1,3 @@
-<style>
-   body{
-      font-family: 'Anonymous Pro', monospace !important;
-   }
-   #content{
-      margin-top: 100px;
-   }
-   .thumbnail {
-        height: auto ;
-        width: 200px;
-        margin: 20px 0px;
-   }
-   .thumbnail:hover {
-        position:relative;
-        top:-25px;
-        left:-35px;
-        width:500px;
-        height:auto;
-        display:block;
-        z-index:999;
-    }
-</style>
 <?php
    include_once('header/header.php');
 
@@ -45,12 +23,26 @@
         <div class="row">
             <?php foreach($pathway as $path) { ?>
                 <div class="col-sm-6 col-md-4 work">
-                    <img src="../img/tv/<?=$path?>" alt="../img/tv/<?=$path?>" class="img-fluid">
+                    <img src="../img/tv/<?=$path?>" alt="../img/tv/<?=$path?>" class="workImg img-fluid">
                 </div>
             <?php } ?>
         </div>
-       
+        <div class="row">
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- The Close Button -->
+                <span class="close">&times;</span>
+
+                <!-- Modal Content (The Image) -->
+                <img class="modal-content" id="img01">
+
+                <!-- Modal Caption (Image Text) -->
+                <div id="caption">
+                </div>
+            </div>
+        </div>
     </div>
+    <script src="/js/modal.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -273,7 +273,7 @@
                             </div>
                             <div class="row" style="margin: 10px 0px;">
                                 <div class="col-md-4">
-                                    <a href="/views/detail_page.php?type=logo" target="blank">
+                                    <a href="/views/logo.php?work=logo" target="blank">
                                         <img src="/img/cover/logoCover.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
