@@ -93,9 +93,12 @@
             <section id="home" class="animated lightSpeedIn delay-1s">
                 <div class="container-fluid">
                     <div class="row">
-                        
                         <div id="splash" class="embed-responsive embed-responsive-21by9">
-                            <video autoplay loop src="/img/splash/splash1.mov"></video>
+                            <video autoplay loop>
+                                <source src="/img/splash/splash1.mov" type="video/mp4">
+                                <source src="/img/splash/splash1.mov" type="video/ogg">
+                                Your browser does not support the video tag.
+                            </video>
                         </div>
                      
                     </div>
