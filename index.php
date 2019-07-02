@@ -283,7 +283,7 @@
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/views/campaign.php">
+                                    <a href="/views/campaign.php?work=campaign">
                                         <img src="/img/cover/socialMediaCampaign.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
