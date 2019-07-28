@@ -1,4 +1,36 @@
+<?php
+    //Loading Composer's autholoader
+    require 'vendor/autoload.php';
 
+    //Adding ENV Files
+    $dotenv = Dotenv\Dotenv::create(__DIR__);
+    $dotenv->load();
+    require_once "phar://vendor/cache/iron_cache.phar";
+
+        
+    # Create a client object
+    $cache = new IronCache(array(
+        'token' => $_ENV['ironCacheToken'],
+        'project_id' => $_ENV['ironCacheProject']
+    ));
+
+    $cache->setCacheName('images');
+
+    # Put an item
+    $cache->put("aboutMe", "/img/aboutMe.png");
+    $cache->put("splash", "/img/splash/splash.mp4");
+
+    # Get an item
+    $aboutMe = $cache->get("aboutMe");
+    $splash = $cache->get("splash");
+    
+
+    # Delete a message (you must delete a message when you're done with it or it will go back on the queue after a timeout
+    //$cache->delete("mykey");
+
+    # Increment an item in the cache
+    //$cache->increment("mykey", 1);
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -35,6 +67,7 @@
 
     gtag('config', 'UA-140027274-1');
     </script>
+    <script src="js/offline.js"></script>
   </head>
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
@@ -65,7 +98,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div id="splash" class="embed-responsive embed-responsive-21by9">
-                            <video autoplay loop src="/img/splash/splash.mp4"></video>
+                            <video autoplay loop src="<?php echo $splash->value;?>"></video>
                         </div>
                      
                     </div>
@@ -74,22 +107,22 @@
             <section id="about">
                 <div class="container-fluid">
                     <div class="row">
-                        <img src="img/aboutMe.png" alt="" style="width:100%; height: 100%;">
+                        <img src="<?php echo $aboutMe->value;?>" alt="About Me Image" style="width:100%; height: 100%;">
                     </div>
                     <div id="social" class="row">
                         <div class="col">
                             <span class= "social">
-                                <a href="/views/resume.php" target="_blank" style="text-decoration: none; color: black;">
+                                <a aria-label="Resume" href="/views/resume.php" target="_blank" style="text-decoration: none; color: black;">
                                     RESUME
                                 </a>
                             </span>
                             <span class="social">
-                                <a href="http://www.linkedin.com/in/sharonharrah/" target="_blank" style="text-decoration: none; color: black">
+                                <a aria-label="Linkedin" href="http://www.linkedin.com/in/sharonharrah/" target="_blank" style="text-decoration: none; color: black">
                                     <i class="fab fa-linkedin"></i>
                                 </a>
                             </span>
                             <span class="social">
-                                <a href="mailto: sharon.harrah@hotmail.com" style="text-decoration: none; color: black;">
+                                <a aria-label="Email" href="mailto: sharon.harrah@hotmail.com" style="text-decoration: none; color: black;">
                                     <i class="fas fa-envelope"></i>
                                 </a>
                             </span>
@@ -168,7 +201,7 @@
                                         <li class="list-group-item">Serve customer's needs as a cashier while preparing all beverages and desserts ordered.</li>
                                     </ul>
                                     <ul class="container">
-                                        <li>Started the business social media account on  <a href="https://www.instagram.com/t_towncafe/" style="color:#EF233B;" target="_blank">Instagram</a>.</li>
+                                        <li>Started the business social media account on  <a aria-label="TTownInstagram" href="https://www.instagram.com/t_towncafe/" style="color:#EF233B;" target="_blank">Instagram</a>.</li>
                                         <li>Helped create content/edit pictures to gain a presence in a diverse area.</li>
                                         <li>Created a temporary logo for the coffee and dessert cups, and punch card.</li>
                                     </ul>
@@ -229,34 +262,34 @@
                         <div class="container-fluid">
                             <div class="row" style="margin: 15px 0px;">
                                 <div class="col-md-4">
-                                    <a href="/views/flyer.php?work=flyer" target="blank">
+                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
                                         <img src="/img/cover/flyerCover.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/views/ig.php?work=socialMedia" target="blank">
+                                    <a aria-label="SocialMediaProjects" href="/views/ig.php?work=socialMedia" target="blank">
                                         <img src="/img/cover/socialMediaCover.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/views/email.php?work=email" target="blank">
+                                    <a aria-label="EmailProjects" href="/views/email.php?work=email" target="blank">
                                         <img src="/img/cover/emailCover.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                             </div>
                             <div class="row" style="margin: 10px 0px;">
                                 <div class="col-md-4">
-                                    <a href="/views/logo.php?work=logo" target="blank">
+                                    <a aria-label="LogoProjects" href="/views/logo.php?work=logo" target="blank">
                                         <img src="/img/cover/logoCover.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/views/tv.php?work=tv">
+                                    <a aria-label="TVProjects" href="/views/tv.php?work=tv">
                                         <img src="/img/cover/tvCover.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
                                 <div class="col-md-4">
-                                    <a href="/views/campaign.php?work=campaign">
+                                    <a aria-label="CampaignProjects" href="/views/campaign.php?work=campaign">
                                         <img src="/img/cover/socialMediaCampaign.jpg" class="img-fluid" alt="">
                                     </a>
                                 </div>
@@ -272,15 +305,8 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <!-- Smooth Scoll Script and PING -->
+    <!-- Smooth Scoll Script -->
     <script>
-        var http = require("http");
-        setInterval(function(){
-            http.get('http://www.sharonharrah.com');
-            console.log("Refreshed");
-        }, 300000);
-
-        console.log(http);
         $(document).ready(function(){
             // Add smooth scrolling to all links
             $("a").on('click', function(event) {
