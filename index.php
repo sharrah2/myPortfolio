@@ -1,35 +1,6 @@
 <?php
     //Loading Composer's autholoader
     require 'vendor/autoload.php';
-
-    //Adding ENV Files
-    $dotenv = Dotenv\Dotenv::create(__DIR__);
-    $dotenv->load();
-    require_once "phar://vendor/cache/iron_cache.phar";
-
-        
-    # Create a client object
-    $cache = new IronCache(array(
-        'token' => $_ENV['ironCacheToken'],
-        'project_id' => $_ENV['ironCacheProject']
-    ));
-
-    $cache->setCacheName('images');
-
-    # Put an item
-    $cache->put("aboutMe", "/img/aboutMe.png");
-    $cache->put("splash", "/img/splash/splash.mp4");
-
-    # Get an item
-    $aboutMe = $cache->get("aboutMe");
-    $splash = $cache->get("splash");
-    
-
-    # Delete a message (you must delete a message when you're done with it or it will go back on the queue after a timeout
-    //$cache->delete("mykey");
-
-    # Increment an item in the cache
-    //$cache->increment("mykey", 1);
 ?>
 <!doctype html>
 <html lang="en">
