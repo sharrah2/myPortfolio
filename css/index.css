@@ -7,7 +7,9 @@ html {
 }
 body { 
     background-color: #f9f8f6 !important;
-    font-family: 'Anonymous Pro', monospace !important;
+    /*font-family: 'Anonymous Pro', monospace !important;*/
+    font-family: 'Open Sans Condensed', sans-serif !important;
+
 }
 #content{
     padding-top: 60px;
@@ -32,7 +34,7 @@ body {
     font-weight: bold;
 }
 .social a:hover{
-    color: #EF233B !important;
+    color: #b3b59d !important;
 }
 #work{
     padding-top: 50px;
@@ -45,21 +47,25 @@ body {
 }
 
 /*
-    Experience Section & Components CSS
+    Experience Section & Components CSS 2020
 */
     #experience{
         padding-top: 70px;
     }
     .date{
+        font-weight: 700 !important;
         text-align: center;
         padding: 20px 30px;
-        background-color: #EF233B;
+        background-color: #b3b59d;
         position: relative;
         border-radius: 6px;
         margin: 10px 0px;
     }
+    .robot{
+        font-weight: 700 !important; 
+    }
     .carot-top{
-        border-color: transparent transparent #EF233B transparent;
+        border-color: transparent transparent #e4d4c5 transparent;
         border-style: solid;
         border-width: 9px;
         width: 0;
@@ -69,7 +75,7 @@ body {
         position: absolute;
     }
     .carot-bottom {
-        border-color: #EF233B  transparent transparent transparent;
+        border-color: #e4d4c5  transparent transparent transparent;
         border-style: solid;
         border-width: 9px;
         width: 0;
@@ -87,7 +93,7 @@ body {
         position: absolute;
         pointer-events: none;
         border-color: blue;
-        border-bottom-color: #EF233B;
+        border-bottom-color: #e4d4c5;
         border-width: 10px;
         margin-left: -10px;
     }
@@ -97,20 +103,22 @@ body {
 /*
     Small devices (landscape phones, 576px and up)
 */
-@media (min-width: 576px) {
-
+@media (min-width: 576px) and (max-width: 767.98px) { */
+    body {
+        background-color: red !important;
+    }
     
 }
 
 /*
     Medium devices (tablets, 768px and up)
 */
-@media (min-width: 768px) {
+@media (min-width: 768px) and (max-width: 991.98px ) {
     #content{
         padding-top:70px;
     }
     #home{
-        padding-top: 195px !important;
+        /*padding-top: 195px !important;*/
     }
     #social{
         top: -20px !important;
@@ -122,11 +130,20 @@ body {
         Experience Section & Components CSS
     */
         .date{
+            font-weight: 700 !important;
             text-align: center;
             padding: 20px 30px;
-            background-color: #EF233B;
+            background-color: #b3b59d;
             position: relative;
             border-radius: 6px;
+            margin: 10px;
+
+        }
+        .robot{
+            font-weight: 700 !important;  
+        }
+        .overview{
+            margin-top: -20px;
         }
         .carot-top{
             display: none;
@@ -142,8 +159,8 @@ body {
         .timeline::after{
             content: " ";
             position: absolute;
-            width: 6px;
-            background-color: #EF233B;
+            width: 3px;
+            background-color: #e4d4c5;
             top: 0;
             bottom: 0;
             left: 50%;
@@ -157,12 +174,12 @@ body {
         .work::after {
             content: " ";
             position: absolute;
-            width: 25px;
-            height: 25px;
-            right: -8px;
-            background-color: #EF233B;
-            border: 4px solid #ff9f55;
-            top: 15px;
+            width: 18px;
+            height: 18px;
+            right: -4px;
+            background-color: #e4d4c5;
+            /*border: 4px solid #ff9f55;*/
+            top: 20px;
             border-radius: 50px;
             z-index: 1
         }
@@ -182,7 +199,7 @@ body {
             right: 30px;
             border: medium solid white;
             border-width: 10px 0 10px 10px;
-            border-color: transparent transparent transparent #EF233B;
+            border-color: transparent transparent transparent #e4d4c5;
         }
         .work.right::before {
             content: " ";
@@ -194,7 +211,7 @@ body {
             left: 30px;
             border: medium solid white;
             border-width: 10px 10px 10px 0px;
-            border-color: transparent #EF233B transparent transparent;
+            border-color: transparent #e4d4c5 transparent transparent;
             /*width: 0;
             height: 0;
             border-top: 10px solid transparent;
@@ -215,12 +232,114 @@ body {
 /*
     Large devices (desktops, 992px and up)
 */
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1199.98px){
     .embed-responsive {
         position: inherit !important;
     }
+    #splash{
+        padding: 0 15% 0 15%;
+    }
     #social{
         top: -35px !important;
+    }
+    /*
+        Experience Section & Components CSS 2020
+    */
+    .date{
+        font-weight: 700 !important;
+        text-align: center;
+        padding: 20px 30px;
+        background-color: #b3b59d;
+        position: relative;
+        border-radius: 6px;
+    }
+    .robot{
+        font-weight: 700 !important;
+    }
+    .overview{
+        margin-top: -20px;
+    }
+    .carot-top{
+        display: none;
+    }
+    .carot-bottom{
+        display: none;
+    }
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .timeline::after{
+        content: " ";
+        position: absolute;
+        width: 3px;
+        background-color: #e4d4c5;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    .work{
+        padding: 10px 40px;
+        position: relative;
+        width: 50%;
+    }
+    .work::after {
+        content: " ";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        right: -4px;
+        background-color: #e4d4c5;
+        /*border: 4px solid #ff9f55;*/
+        top: 20px;
+        border-radius: 50px;
+        z-index: 1
+    }
+    .left {
+        left: 4px;
+    }
+    .right {
+        /*left: 50%;*/
+    }
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #e4d4c5;
+    }
+    .work.right::before {
+        content: " ";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 22px;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0px;
+        border-color: transparent #e4d4c5 transparent transparent;
+        /*width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid blue;*/
+    }
+    .right::after {
+        left: -10px;
+    }
+    .content {
+        padding: 20px 30px;
+        background-color: green;
+        position: relative;
+        border-radius: 6px;
     }
 
 }
@@ -236,6 +355,105 @@ body {
         max-width: 80% !important;
         left: 10% !important;
         height: 80% !important;
+    }
+      /*
+        Experience Section & Components CSS 2020
+    */
+    .date{
+        font-weight: 700 !important;
+        text-align: center;
+        padding: 20px 30px;
+        background-color: #b3b59d;
+        position: relative;
+        border-radius: 6px;
+    }
+    .robot{
+        font-weight: 700 !important;
+    }
+    .overview{
+        margin-top: -20px;
+    }
+    .carot-top{
+        display: none;
+    }
+    .carot-bottom{
+        display: none;
+    }
+    .timeline {
+        position: relative;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .timeline::after{
+        content: " ";
+        position: absolute;
+        width: 3px;
+        background-color: #e4d4c5;
+        top: 0;
+        bottom: 0;
+        left: 50%;
+        margin-left: -3px;
+    }
+    .work{
+        padding: 10px 40px;
+        position: relative;
+        width: 50%;
+    }
+    .work::after {
+        content: " ";
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        right: -4px;
+        background-color: #e4d4c5;
+        /*border: 4px solid #ff9f55;*/
+        top: 20px;
+        border-radius: 50px;
+        z-index: 1
+    }
+    .left {
+        left: 4px;
+    }
+    .right {
+        /*left: 50%;*/
+    }
+    .left::before {
+        content: " ";
+        height: 0;
+        position: absolute;
+        top: 22px;
+        width: 0;
+        z-index: 1;
+        right: 30px;
+        border: medium solid white;
+        border-width: 10px 0 10px 10px;
+        border-color: transparent transparent transparent #e4d4c5;
+    }
+    .work.right::before {
+        content: " ";
+        width: 0;
+        height: 0;
+        position: absolute;
+        top: 22px;
+        z-index: 1;
+        left: 30px;
+        border: medium solid white;
+        border-width: 10px 10px 10px 0px;
+        border-color: transparent #e4d4c5 transparent transparent;
+        /*width: 0;
+        height: 0;
+        border-top: 10px solid transparent;
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid blue;*/
+    }
+    .right::after {
+        left: -10px;
+    }
+    .content {
+        padding: 20px 30px;
+        background-color: green;
+        position: relative;
+        border-radius: 6px;
     }
     
 }
