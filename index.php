@@ -1,6 +1,8 @@
 <?php
     //Loading Composer's autholoader
     require 'vendor/autoload.php';
+
+   
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,7 +25,10 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700&display=swap" rel="stylesheet">
+
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Anonymous+Pro" rel="stylesheet">
     <!-- Google Font -->
@@ -68,17 +73,18 @@
             <section id="home" class="animated lightSpeedIn delay-1s">
                 <div class="container-fluid">
                     <div class="row">
-                        <div id="splash" class="embed-responsive embed-responsive-21by9">
-                            <video autoplay loop src="<?php echo $splash->value;?>"></video>
+                        <div id="splash">
+                            <img class="img-fluid" src="/img/splash/splash2020.png" alt="" style="width:100%; height: 100%;">
                         </div>
-                     
                     </div>
                 </div>
             </section>
             <section id="about">
                 <div class="container-fluid">
                     <div class="row">
-                        <img src="<?php echo $aboutMe->value;?>" alt="About Me Image" style="width:100%; height: 100%;">
+                        <div class="col">
+                            <img class="img-fluid" src="/img/aboutMe2020.gif" alt="About Me Image" style="width:100%; height: 100%;>
+                        </div>
                     </div>
                     <div id="social" class="row">
                         <div class="col">
@@ -104,51 +110,111 @@
             <section id="experience">
                 <h1 class="robot" style="text-align:center">EXPERIENCE</h1>
                 <div class="timeline container">
-                    <!-- UW ASUWT -->
+                    <!-- KohGenDo Manager -->
                     <div class="row">
                         <div class="col-xs-12 work left">
-                            <div class="card">
-                                <div class="card-header" style="text-align:center;">
-                                    <h3 class="robot">UW ASUWT</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Student Government Multimedia Specialist</h6>
+                            <div class="card1">
+                                <div class="card-header1" style="text-align:center;">
+                                    <h3 class="robot">Koh Gen Do</h3>
+                                    <h5 class="card-subtitle mb-2 text-muted">Communications Manager</h5>
+                                    <hr style="width:50%; border-top: 2.5px solid #e4d4c5">                                
                                 </div>
                                 <div class="card-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Collaborate and translate project ideas into media productions. Produce, film, edit, and execute media projects. Develop promotional materials and ensure consistent use of Associated Students of University of Washington Tacoma (ASUWT) branding.</li>
-                                    </ul>
+                                    <p class="overview">Produce media and execute tasks for Marketing, Communications, or PR needs of the company. Assists in building brand awareness on all Social Media channels.</p>
                                     <ul class="container">
-                                        <li>Use programs on Adobe Creative Cloud and Canva to create advertisements, logos, contents, and more for ASUWT and associated organizations.</li>
-                                        <li>Create marketing and edit pictures that are shared on UWT campus, ASUWT Instagram, Facebook, Twitter, Email, and public website.</li>
-                                        <li>Create captions that are clear, concise, and consistent for a diverse audience.</li>
+                                        <li>Report to the Chief Brand Officer.</li>
+                                        <li>Assist in finding or creating Social Media Content and write copy.</li>
+                                        <li>Schedule social media on Hootsuite and Facebook Creative Studio.</li>
+                                        <li>Assist, create, or design and order various marketing materials.</li>
+                                        <li>Pitch campaign idea, design, and execute marketing email campaigns to 30,000+ people (Internal & External) with Mailchimp <strong>(Work available for revew)</strong>.</li>
+                                        <li>Use basic HTML to execute sales on website and update product pages.</li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div class="col">
                             <div class="date">
-                                <h2 class="robot">October 2018 - Present</h2>
+                                <h3 class="robot">December 2019 - Present</h3>
                             </div>
                             <div class="carot-top"></div>
+                            <div class="carot"></div>
+                        </div>
+                    </div>
+                    <!-- KohGenDo Intern -->
+                    <div class="row">
+                        <div class="col">
+                            <div class="date">
+                                <h3 class="robot">September 2019 - December 2019</h3>
+                            </div>
+                            <div class="carot-bottom"></div>
+                        </div>
+                        <div class="col-xs-12 work right">
+                            <div class="card1">
+                                <div class="card-header1" style="text-align:center;">
+                                    <h3 class="robot">Koh Gen Do</h3>
+                                    <h5 class="card-subtitle mb-2 text-muted">Communications Intern</h5>
+                                    <hr style="width:50%; border-top: 2.5px solid #e4d4c5">                                
+                                </div>
+                                <div class="card-body">
+                                    <p class="overview">
+                                    Three month internship where I worked alongside with the marketing/communcations/PR team.
+                                    </p>
+                                    <ul class="container">
+                                        <li>Created the social media pages.</li>
+                                        <li>Create various promotional goods or marketing materials.</li>
+                                        <li>In charge of administrative work and weekly finance.</li>
+                                        <li>Planned/Budgeted mid-large scale events and lead weekly meetings.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- UW ASUWT -->
+                    <div class="row">
+                        <div class="col-xs-12 work left">
+                            <div class="card1">
+                                <div class="card-header1" style="text-align:center;">
+                                    <h3 class="robot">UW ASUWT</h3>
+                                    <h5 class="card-subtitle mb-2 text-muted">Student Government Multimedia Specialist</h5>
+                                    <hr style="width:50%; border-top: 2.5px solid #e4d4c5">                                
+                                </div>
+                                <div class="card-body">
+                                    <p class="overview"> Collaborated and translated project ideas into media productions. Produced, filmed, edited, and executed media projects. Developed promotional materials and ensured consistent use of Associated Students of Univeristy of Washington Tacoma (ASUWT) branding.</p>
+                                    <ul class="container">
+                                        <li>Used programs on Adobe Creative CLoud and Canva to create advertisements, logos, contents, and more for ASUWT and associated organizations.</li>
+                                        <li>Created marketing and edited pictures that are shared on UWT campus, ASUWT Instagram, Facebook, Twitter, Email, and public website.</li>
+                                        <li>Created captions that are clear, concise, and consistent for a diverse audience</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="date">
+                                <h3 class="robot">October 2018 - June 2019</h3>
+                            </div>
+                            <div class="carot-top"></div>
+                            <div class="carot"></div>
                         </div>
                     </div>
                     <!-- TCPC -->
                     <div class="row">
                         <div class="col">
                             <div class="date">
-                                <h2 class="robot">September 2015 - Present</h2>
+                                <h3 class="robot">September 2015 - Present</h3>
                             </div>
                             <div class="carot-bottom"></div>
                         </div>
                         <div class="col-xs-12 work right">
-                            <div class="card">
-                                <div class="card-header" style="text-align:center;">
+                            <div class="card1">
+                                <div class="card-header1" style="text-align:center;">
                                     <h3 class="robot">Tacoma Central Church</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Director of Youth Group (Volunteer)</h6>
+                                    <h5 class="card-subtitle mb-2 text-muted">Director of Youth Group (Volunteer)</h5>
+                                    <hr style="width:50%; border-top: 2.5px solid #e4d4c5">                                
                                 </div>
                                 <div class="card-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Worked under the supervision of the Youth Group Pastor that developed and oversaw programs and activities that were directed toward middle school and high school students in order to aid their spiritual development and growth.</li>
-                                    </ul>
+                                    <p class="overview">
+                                    Worked under the supervision of the Youth Group Pastor that developed and oversaw programs and activities that were directed toward middle school and high school students in order to aid their spiritual development and growth.
+                                    </p>
                                     <ul class="container">
                                         <li>Created the social media pages.</li>
                                         <li>Create various promotional goods or marketing materials.</li>
@@ -162,17 +228,18 @@
                     <!-- T-Town Cafe -->
                     <div class="row">
                         <div class="col-xs-12 work left">
-                            <div class="card">
-                                <div class="card-header" style="text-align:center;">
+                            <div class="card1">
+                                <div class="card-header1" style="text-align:center;">
                                     <h3 class="robot">T-Town Cafe</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Server | Barista</h6>
+                                    <h5 class="card-subtitle mb-2 text-muted">Server | Barista</h5>
+                                    <hr style="width:50%; border-top: 2.5px solid #e4d4c5">                                 
                                 </div>
                                 <div class="card-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Serve customer's needs as a cashier while preparing all beverages and desserts ordered.</li>
-                                    </ul>
+                                    <p class="overview">
+                                    Serve customer's needs as a cashier while preparing all beverages and desserts ordered.
+                                    </p>
                                     <ul class="container">
-                                        <li>Started the business social media account on  <a aria-label="TTownInstagram" href="https://www.instagram.com/t_towncafe/" style="color:#EF233B;" target="_blank">Instagram</a>.</li>
+                                        <li>Started the business social media account on  <strong> <a aria-label="TTownInstagram" href="https://www.instagram.com/t_towncafe/" style="color:#b3b59d;" target="_blank">Instagram</a></strong>.</li>
                                         <li>Helped create content/edit pictures to gain a presence in a diverse area.</li>
                                         <li>Created a temporary logo for the coffee and dessert cups, and punch card.</li>
                                     </ul>
@@ -181,7 +248,7 @@
                         </div>
                         <div class="col">
                             <div class="date">
-                                <h2 class="robot">April 2018 - November 2018</h2>
+                                <h3 class="robot">April 2018 - November 2018</h3>
                             </div>
                             <div class="carot-top"></div>
                             <div class="carot"></div>
@@ -191,21 +258,22 @@
                     <div class="row">
                         <div class="col">
                             <div class="date">
-                                <h2 class="robot">March 2016 - June 2017</h2>
+                                <h3 class="robot">March 2016 - June 2017</h3>
                             </div>
                             <div class="carot-bottom"></div>
                             <div class="carot"></div>
                         </div>
                         <div class="col-xs-12 work right">
-                            <div class="card">
-                                <div class="card-header" style="text-align:center;">
+                            <div class="card1">
+                                <div class="card-header1" style="text-align:center;">
                                     <h3 class="robot">Macys</h3>
-                                    <h6 class="card-subtitle mb-2 text-muted">Sales Associate</h6>
+                                    <h5 class="card-subtitle mb-2 text-muted">Sales Associate</h5>
+                                    <hr style="width:50%; border-top: 2.5px solid #e4d4c5">                                
                                 </div>
                                 <div class="card-body">
-                                    <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Customer Service Associate on the flexible work team responsible for outstanding customer service, creating an exceptional shopping experience, completing point of sale transactions inclusive of credit and Start Rewards enrollment, and delivering a clean, neat, and easy to shop environment.</li>
-                                    </ul>
+                                    <p class="overview">
+                                    Customer Service Associate on the flexible work team responsible for outstanding customer service, creating an exceptional shopping experience, completing point of sale transactions inclusive of credit and Start Rewards enrollment, and delivering a clean, neat, and easy to shop environment.
+                                    </p>
                                     <ul class="container">
                                         <li >Prepared to work in any department during a shift and on call.</li>
                                         <li> Worked cashier, answered phone calls, found missing products, and organized the sales floor.</li>
@@ -217,6 +285,7 @@
                 </div>
             </section>
             <section id="work">
+                <img class="img-fluid" src="/img/selectedworks.png" alt="" style="padding: 0 15% 0 15%">
                 <h1 class="robot" style="text-align:center">SELECTED WORKS</h1>
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -230,6 +299,28 @@
                         </ul>
                     </div>
                     <div class="portfolio">
+                        <div class="container-fluid">
+                            <div class="row" style="margin: 15px 0px;">
+                                <div class="col-md-4">
+                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
+                                        <img class="img-fluid"src="/img/SW_ASWUT.png" alt="">
+                                    </a> 
+                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
+                                        <img class="img-fluid" src="/img/SW_ASWUT.png" alt="">
+                                    </a> 
+                                </div>
+                                <div class="col-md-4">
+                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
+                                        <img class="img-fluid" src="/img/SW_freelance.png" alt="">
+                                    </a> 
+                                </div>
+                                <div class="col-md-4">
+                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
+                                        <img class="img-fluid"src="/img/SW_KohGenDo.png" alt="">
+                                    </a> 
+                                </div>
+                            </div>
+                        </div>
                         <div class="container-fluid">
                             <div class="row" style="margin: 15px 0px;">
                                 <div class="col-md-4">
@@ -292,7 +383,7 @@
                     // Using jQuery's animate() method to add smooth page scroll
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
-                        scrollTop: $(hash).offset().top
+                        scrollTop: $(hash).offset().top;
                     }, 800, function(){
                 
                         // Add hash (#) to URL when done scrolling (default click behavior)
