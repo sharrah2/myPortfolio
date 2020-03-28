@@ -1,8 +1,6 @@
 <?php
     //Loading Composer's autholoader
     require 'vendor/autoload.php';
-
-   
 ?>
 <!doctype html>
 <html lang="en">
@@ -286,77 +284,32 @@
             </section>
             <section id="work">
                 <img class="img-fluid" src="/img/selectedworks.png" alt="" style="padding: 0 15% 0 15%">
-                <h1 class="robot" style="text-align:center">SELECTED WORKS</h1>
                 <div class="container-fluid">
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav">
-                            <li class="active" data-filter="*">All</li>
-                            <li data-filter=".email">Email</li>
-                            <li data-filter=".flyer">Flyers</li>
-                            <li data-filter=".ig">Instagram</li>
-                            <li data-filter=".logo">Logo</li>
-                            <li data-filter=".tv">TV Ad</li>
-                        </ul>
-                    </div>
+                    
                     <div class="portfolio">
                         <div class="container-fluid">
                             <div class="row" style="margin: 15px 0px;">
                                 <div class="col-md-4">
-                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
+                                    <a aria-label="FlyerProjects" href="/comingsoon.php" target="blank">
                                         <img class="img-fluid"src="/img/SW_ASWUT.png" alt="">
                                     </a> 
-                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
+                                    <a aria-label="FlyerProjects" href="/comingsoon.php" target="blank">
                                         <img class="img-fluid" src="/img/SW_ASWUT.png" alt="">
                                     </a> 
                                 </div>
                                 <div class="col-md-4">
-                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
+                                    <a aria-label="FlyerProjects" href="/comingsoon.php" target="blank">
                                         <img class="img-fluid" src="/img/SW_freelance.png" alt="">
                                     </a> 
                                 </div>
                                 <div class="col-md-4">
-                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
+                                    <a aria-label="FlyerProjects" href="/comingsoon.php" target="blank">
                                         <img class="img-fluid"src="/img/SW_KohGenDo.png" alt="">
                                     </a> 
                                 </div>
                             </div>
                         </div>
-                        <div class="container-fluid">
-                            <div class="row" style="margin: 15px 0px;">
-                                <div class="col-md-4">
-                                    <a aria-label="FlyerProjects" href="/views/flyer.php?work=flyer" target="blank">
-                                        <img src="/img/cover/flyerCover.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a aria-label="SocialMediaProjects" href="/views/ig.php?work=socialMedia" target="blank">
-                                        <img src="/img/cover/socialMediaCover.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a aria-label="EmailProjects" href="/views/email.php?work=email" target="blank">
-                                        <img src="/img/cover/emailCover.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row" style="margin: 10px 0px;">
-                                <div class="col-md-4">
-                                    <a aria-label="LogoProjects" href="/views/logo.php?work=logo" target="blank">
-                                        <img src="/img/cover/logoCover.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a aria-label="TVProjects" href="/views/tv.php?work=tv">
-                                        <img src="/img/cover/tvCover.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                                <div class="col-md-4">
-                                    <a aria-label="CampaignProjects" href="/views/campaign.php?work=campaign">
-                                        <img src="/img/cover/socialMediaCampaign.jpg" class="img-fluid" alt="">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
@@ -383,9 +336,8 @@
                     // Using jQuery's animate() method to add smooth page scroll
                     // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
                     $('html, body').animate({
-                        scrollTop: $(hash).offset().top;
+                        scrollTop: $(hash).offset().top
                     }, 800, function(){
-                
                         // Add hash (#) to URL when done scrolling (default click behavior)
                         window.location.hash = hash;
                     });
