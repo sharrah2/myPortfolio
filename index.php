@@ -289,7 +289,7 @@
                     <div class="portfolio">
                         <div class="container-fluid">
                             <div class="row" style="margin: 15px 0px;">
-                                <div class="col-md-4">
+                                <div class="col-12">
                                     <a aria-label="FlyerProjects" href="/comingsoon.php" target="blank">
                                         <img class="img-fluid"src="/img/SW_ASWUT.png" alt="">
                                     </a> 
@@ -297,12 +297,12 @@
                                         <img class="img-fluid" src="/img/SW_ASWUT.png" alt="">
                                     </a> 
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-12">
                                     <a aria-label="FlyerProjects" href="/comingsoon.php" target="blank">
                                         <img class="img-fluid" src="/img/SW_freelance.png" alt="">
                                     </a> 
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-12">
                                     <a aria-label="FlyerProjects" href="/comingsoon.php" target="blank">
                                         <img class="img-fluid"src="/img/SW_KohGenDo.png" alt="">
                                     </a> 
