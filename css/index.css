@@ -20,6 +20,7 @@ body {
 }
 #splash{
     object-fit: fill;
+    maring: 0 15%;
 }
 #about{
     padding-top: 75px;
