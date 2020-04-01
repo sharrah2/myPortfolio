@@ -104,9 +104,7 @@ body {
     Small devices (landscape phones, 576px and up)
 */
 @media (min-width: 576px) and (max-width: 767.98px) { */
-    body {
-        background-color: red !important;
-    }
+    
     
 }
 
@@ -237,7 +235,7 @@ body {
         position: inherit !important;
     }
     #splash{
-        padding: 0 15% 0 15%;
+        padding: 0 15% !important;
     }
     #social{
         top: -35px !important;
